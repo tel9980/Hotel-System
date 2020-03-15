@@ -1,0 +1,309 @@
+.section_page-gallery {
+	background-color: #fff;
+	padding-top: 40px;
+	padding-bottom: 120px;
+}
+
+/* GALLERY */
+.gallery {
+
+	.heading {
+		margin-bottom: 40px;
+	}
+
+	&.no-padding {
+		
+		.gallery-cat {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		
+		.gallery-content {
+			margin-top: 40px;
+			
+			.row {
+				margin-left: 0;
+				margin-right: 0;
+			}
+
+			[class*="col-"] {
+				padding-left: 0;
+				padding-right: 0;
+				margin-top: 0;
+			}
+
+			.item {
+				margin-top: 0;
+			}
+		}
+	}
+
+	&.gallery-3 {
+
+		.gallery-content {
+
+			[class*="col-"] {
+				margin-top: 30px;
+			}
+		}
+	}
+
+}
+
+.gallery-content {
+	margin-top: 20px;
+	
+	.gallery_item {
+		position: relative;
+		overflow: hidden;
+
+		img {
+			width: 100%;
+		}
+
+		.icon {
+			pointer-events: none;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			color: #fff;
+			line-height: 1;
+			font-size: 0px;
+			.translate(-50%, -50%);	
+			background: url(../images/icon-galery.png)no-repeat;
+			width: 64px;
+			height: 64px;
+		}
+
+		&:before {
+			bottom: 0;left: 0; right: 0; top: 50%;
+			position: absolute;
+			content: '';
+			opacity: 0;
+			pointer-events: none;
+			.transition(all 0.3s ease-out);
+			.gradient(transparent,@brand);
+		}
+
+		.text {
+			position: absolute;
+			bottom: 10px;left: 15px;right: 15px;
+			color: #fff;
+			z-index: 10;
+			font-family: @Montserrat;
+			font-size: 16px;
+			pointer-events: none;
+			font-weight: normal;
+			opacity: 0;
+			visibility: hidden;
+			.translate(0, 50%);
+			.transition(all 0.3s ease-out);
+			max-width: 280px;
+		}
+
+		&:hover {
+
+			.text {
+				opacity: 1;
+				visibility: visible;
+				.translate(0,0);
+			}
+
+			&:before {
+				top: 0;
+				opacity: .9;
+			}
+		}
+
+	}
+
+	.our-gallery {
+		margin-top: 30px;
+
+		.awe-btn {
+			min-width: 180px;
+		}
+	}
+}
+.gallery-content.hover-img{
+	.gallery_item{
+		&:before{
+			background: none;
+		}
+		img{
+			.transition(all 0.5s ease);
+		}
+		&:hover{
+			img{
+				transform:scale(1.1);
+			}
+		}
+	}
+}
+.gallery-isotope {
+	
+	.item-isotope {
+		float: left;
+		margin-top: 20px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	&.pd-0 {
+		.item-isotope {
+			padding: 0;
+			margin-top: 0;
+		}
+	}
+
+	&.col-3 {
+
+		.item-isotope, .item-size {
+			width: 33.333333%;
+		}
+	}
+
+	&.col-4 {
+
+		.item-isotope, .item-size {
+			width: 25%;
+		}
+
+		.item-isotope.larger {
+			width: 50%;
+		}
+	}
+
+	&.col-6 {
+
+		.item-isotope, .item-size {
+			width: 16.66666667%;
+		}
+	}
+}
+
+.gallery-cat {
+
+	ul {
+		margin-bottom: 0;
+		font-size: 0;
+
+		li {
+			font-size: 16px;
+
+			a {
+				color: @color;
+				text-transform: uppercase;
+				font-weight: 500;
+				display:block;
+				padding: 7px 15px;
+				.transition(all 0.2s ease);
+			}
+
+			&:hover a, &.active a {
+				background-color: @brand;
+				color: #fff;
+			}
+		}
+	}	
+}
+
+.mfp-wrap {
+	cursor: default;
+
+	.mfp-content {
+
+		.mfp-figure {
+			
+			padding-bottom: 0;
+			background-color: #1f232b;
+			position: relative;
+
+			&:after {
+				content: none;
+			}
+			
+			.mfp-close {
+				right: 7px;
+				top: 7px;
+				position: absolute;
+				padding: 0;
+				height: 20px;
+				width: 20px;
+				line-height: 20px;
+				font-size: 20px;
+				color: #fff;
+				text-align: center;
+				cursor: pointer;
+				background-color: #7c7c7c;
+				.border-radius(100%);
+				.transition(all 0.3s ease);
+
+				&:hover {
+					background-color: @hover;
+				}
+			}
+
+			.mfp-img {
+				padding:30px 30px 60px 30px;
+			}
+
+			.mfp-bottom-bar {
+				position: absolute;
+				margin: 0;
+				text-align: center;
+				font-weight: 500;
+				bottom: 17px;
+				top: inherit;
+				left: 30px;
+				right: 30px;
+				width: inherit;
+
+				.mfp-title {
+					position: static;
+					display: inline-block;
+					color: #fff;
+					padding-right: 10px;
+					font-size: 16px;
+				}
+
+				.mfp-counter {
+					display: inline-block;
+					position: static;
+					font-size: 16px;
+					colo: #898989;
+				}
+			}
+		}
+	}
+
+	.mfp-prevent-close {
+		position: absolute;
+		top: 50%;
+		background-color: transparent;
+		border: 2px solid #fff;
+		color: #fff;
+		width: 36px;
+		height: 36px;
+		line-height: 30px;
+		text-align: center;
+		.border-radius(100%);
+		.translate(0, -50%);
+		.transition(all 0.3s ease);
+
+		&:hover {
+			color: @hover;
+			border-color: @hover;
+		}
+
+		&.mfp-prevent-left {
+			left: 10px;
+		}
+
+		&.mfp-prevent-right {
+			right: 10px;
+		}
+	}
+}
+
+/* END / GALLERY */

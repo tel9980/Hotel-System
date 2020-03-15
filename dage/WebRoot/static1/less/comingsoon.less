@@ -1,0 +1,116 @@
+.section-comingsoon {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.comingsoon {
+	position: absolute;
+	padding: 15px;
+	left: 0;
+	right: 0;
+	top: 50%;
+	.translate(0,-50%);
+
+	h1 {
+		color: #fff;
+		text-transform: uppercase;
+		font-size: 60px;
+		font-family: @Montserrat;
+		line-height: 1;
+	  	margin-top: 20px;
+
+		span {
+			color: @hover;
+		}
+	}
+
+	h6 {
+		color: #fff;
+		font-size: 36px;
+		margin-top: 10px;
+		font-weight: normal;
+		font-family: @Hind;
+	}
+
+	p {
+		margin-bottom: 0;
+		font-size: 20px;
+		color: #fff;
+		margin-top: 25px;
+	}
+
+	.countdown {
+		border: 2px solid #fff;
+		max-width: 730px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 20px;
+		overflow: hidden;
+		padding-top: 15px;
+		padding-bottom: 20px;
+
+		.item {
+			width: 25%;
+			float: left;
+			color: #fff;
+			font-size: 20px;
+			text-transform: uppercase;
+			text-align: center;
+			margin-top: 10px;
+			position: relative;
+
+			+ .item:before {
+				content: ':';
+				position: absolute;
+				left: 0;
+				top: 50%;
+				font-size: 30px;
+				.translate(0, -50%);
+			}
+
+			.count {
+				display: block;
+				font-family: @Montserrat;
+				font-size: 50px;
+				line-height: 1;
+			}
+		}
+	}
+
+	.widget_social {
+
+		.widget-title {
+			margin-top: 25px;
+			color: #fff;
+			font-weight: normal;
+			font-family: @Hind;
+			font-size: 20px;
+		}
+
+		.widget-social {
+			text-align: center;
+			font-size: 0;
+
+			a {
+				display: inline-block;
+				border: 2px solid #fff;
+				color: #fff;
+				font-size: 16px;
+				height: 30px;
+				width: 30px;
+				line-height: 30px;
+				text-align: center;
+				margin: 15px 10px 0 10px;
+				.border-radius(100%);
+				.transition(all 0.3s ease);
+
+				&:hover {
+					border-color: @hover;
+				}
+			}
+		}
+	}
+}

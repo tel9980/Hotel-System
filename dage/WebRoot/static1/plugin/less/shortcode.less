@@ -1,0 +1,374 @@
+a,
+input,
+textarea,
+button,
+select {
+    outline: none;
+}
+a:hover,
+a:focus,
+input:focus,
+textarea:focus,
+button:focus,
+select:focus {
+    outline: none !important;
+    text-decoration: none;
+}
+
+body {
+    position: relative;
+    font-family: @Roboto;
+    font-size: 14px;
+    color: @color;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 0.014em;
+}
+
+input, textarea {
+   .border-radius(0);
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+code, kbd, pre, samp {
+    font-size: inherit;
+}
+code {
+    background-color: #eee;
+    letter-spacing: 0.015em;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border: 0;
+}
+
+::-moz-selection {
+    color: #fff;
+    background-color: @color;
+}
+::selection {
+    color: #fff;
+    background-color: @color;
+}
+.clear {
+    clear: both;
+}
+
+#awe-plugin-booking {
+    overflow: hidden;
+    z-index: 9;
+    background-color: #ffffff;
+    padding: 20px 0;
+    font-family: @Roboto;
+}
+
+.apb-input {
+    height: 30px;
+    line-height: 30px;
+    border-width: 0;
+    font-size: 12px;
+    padding: 0 10px;
+    font-family: @Roboto;
+    background-color: #ffffff;
+}
+
+.apb-calendar-wrapper {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 100%;
+    background-color: #ffffff;
+
+    .apb-calendar {
+        padding:0 30px 0 10px;
+        background-color: transparent;
+        color: #898989;
+        width: 100%;
+        height: auto;
+        height: 30px;
+        line-height: 30px;
+        .placeholder(#898989);
+    }
+
+    i {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        font-size: 12px;
+        color: #898989;
+        pointer-events: none;
+        .translate(0, -50%);
+
+    }
+}
+
+.apb-select-wrapper {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 100%;
+    background-color: #ffffff;
+
+    select {
+        color: #898989;
+        width: 100%;
+        font-size: 12px;
+        border-width: 0;
+        padding-left: 10px;
+        height: 30px;
+        background-color: transparent;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+
+        option {
+            color: @color;
+            padding: 10px 0;
+        }
+    }
+
+    i {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        font-size: 14px;
+        line-height: 30px;
+        width: 30px;
+        text-align: center;
+        pointer-events: none;
+        color: #898989;
+        background-color: #fff;
+    }
+}
+
+.apb-btn {
+    display: inline-block;
+    background: none;
+    white-space: nowrap;
+    text-transform: uppercase;
+    cursor: pointer;
+    line-height: normal;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    min-width: 110px;
+    border-width: 0;
+    text-align: center;
+    background-color: @hover;
+    .transition(all 0.2s ease);
+
+    &.apb-btn-1 {
+        background-color: transparent;
+        border: 1px solid @color;
+        color: @color;
+
+        &:hover {
+            background-color: @hover;
+            color: #fff;
+            border-color: @hover;
+        }
+    }
+}
+
+.apb-field {
+    width: 100%;
+    display: inline-block;
+
+    label {
+        display: block;
+        font-size: 12px;
+        font-weight: bold;
+        color: @color;
+        text-transform: uppercase;
+    }
+}
+
+.apb-heading {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: @color;
+    height: 54px;
+    line-height: 54px;
+    border-bottom: 1px solid #e4e4e4;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+}
+
+.apb-sidebar_title {
+    color: @hover;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 0;
+    font-weight: bold;
+
+    .fa {
+        margin-right: 10px;
+    }
+}
+
+.apb-datepicker {
+    background: #ffffff;
+    border-width: 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    padding: 0 20px 20px 20px;
+    width: 300px;
+    .border-radius(0);
+
+    .ui-datepicker-header {
+        background-color: #fff;
+        border-width: 0;
+        padding: 0;
+        margin-left: -20px;
+        margin-right: -20px;
+        margin-bottom: 7px;
+        border-bottom: 1px solid #e4e4e4;
+        .border-radius(0);
+
+        .ui-datepicker-title {
+            font-family: @Roboto;
+            font-size: 14px;
+            color: @color;
+            text-transform: uppercase;
+            font-weight: both;
+            line-height: 50px;
+        }
+
+        .ui-corner-all {
+            position: absolute;
+            display: block;
+            height: inherit;
+            width: 24px;
+            line-height: 22px;
+            text-align: center;
+            border-width: 0;
+            cursor: pointer;
+            border: 1px solid #e4e4e4;
+            top: 50%;
+            background-image: none;
+            opacity: 1;
+            color: #d4d4d4;
+            .translate(0,-50%);
+            .border-radius(0);
+            .transition(all 0.3s ease);
+
+            .ui-icon {
+                background: none;
+                text-indent: 0;
+                position: static;
+                margin: 0;
+                font-size: 11px;
+                width: inherit;
+                height: inherit;
+                display: inline;    
+            }
+
+            &.ui-datepicker-prev {
+                left: 20px;
+            }
+
+            &.ui-datepicker-next {
+                right: 20px;
+            }
+
+            &.ui-state-hover {
+                background-color: @hover;
+                border-color: @hover;
+                color: #fff;
+            }
+        }
+    }
+
+    .ui-datepicker-calendar {
+        width: 100%;
+        margin: 0;
+        table-layout: fixed;
+
+        thead th {
+            color: @color;
+            font-family: @Roboto;
+            font-size: 12px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        td {
+            padding:3.5px;
+
+            &:last-child {
+                padding-right: 0;
+            }
+
+            &:first-child {
+                padding-left: 0;
+            }
+
+            a {
+                width: 30px;
+                height: 30px;
+                display: block;
+                line-height: 28px;
+                margin: auto;
+                border: 1px solid #e4e4e4;
+                color: @color;
+                font-size: 12px;
+                font-family: @Roboto;
+                text-align: center;
+                background-color: #fff;
+                background-image: none;
+                position: relative;
+                .transition(all 0.3s ease);
+
+                &:after {
+                    content: '';
+                    z-index: 1;
+                    pointer-events: none;
+                    position: absolute;
+                    top: -1px; bottom: -1px; right: -1px; left: -1px;
+                    border: 2px solid transparent;
+                    .transition(all 0.3s ease);
+                }
+
+                &:hover {
+                    border-color: #516d9b;
+
+                    &:after {
+                        border-color: #516d9b;
+                    }
+                }
+
+            }
+
+            &.ui-datepicker-today a {
+                border-color: @hover;
+
+                &:after {
+                    border-color: @hover;
+                }
+            }
+
+            &.ui-datepicker-current-day a {
+                border-color: @hover;
+                color: #fff;
+                background-color: @hover;
+            }
+        }
+    }
+}
+
+.apb-bg_blue {
+    background-color: @hover;
+}

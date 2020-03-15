@@ -1,0 +1,177 @@
+.section-contact {
+	background-color: #fff;
+	padding-top: 45px;
+	padding-bottom: 85px;
+}
+
+.contact {
+
+	.text {
+		margin-top: 15px;
+
+		h2 {
+			color: @color;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 20px;
+		}
+
+		p {
+			margin-top: 10px;
+			color: @color;
+			line-height: 1.428em;
+		}
+
+		ul {
+			list-style: none;
+			padding-left: 0;
+			margin-bottom: 0;
+			margin-top: 30px;
+
+			li {
+				padding: 7px 0;
+
+				.icon {
+					color: @brand;
+					font-size: 20px;
+					margin-right: 20px;
+					vertical-align: middle;
+				}
+			}
+		}
+	}
+
+	.contact-location {
+		border-top: 1px solid #e3e3e3;
+		padding-top: 15px;
+		margin-top: 35px;
+
+		.btn-collapse {
+			text-transform: uppercase;
+			color: @color;
+			font-weight: bold;
+			font-size: 20px;
+			display: block;
+			font-family: @Montserrat;
+			.transition(all 0.3s ease);
+
+			span {
+				float: right;
+				font-size: 24px;
+			}
+
+			&:hover {
+				color: @hover;
+			}
+		}
+
+		.location-group {
+			margin-top: 25px;
+
+			h6 {
+				font-weight: bold;
+				color: #444444;
+				font-size: 20px;
+				margin-bottom: 5px;
+				text-transform: uppercase;
+			}
+
+			span {
+				color: #898989;
+				font-size: 15px;
+			}
+
+			.location-item {
+				margin-top: 25px;
+				cursor: pointer;
+
+				&:after {
+					content: '';
+					display: table;
+					clear: both;
+				}
+
+				.img {
+					float: left;
+					width: 100px;
+					position: relative;
+
+					.fa {
+						position: absolute;
+						left: 0;right: 0; bottom: -14px;
+						margin: auto;
+						display: block;
+						width: 28px;
+						height: 28px;
+						line-height: 28px;
+						text-align: center;
+						color: #fff;
+						background-color: @hover;
+						.border-radius(100%);
+					}
+
+					img {
+						width: 100%;
+					}
+				}
+
+				.text {
+					margin-left: 120px;
+					color: #333333;
+
+					address {
+						margin-top: 10px;
+						margin-bottom: 0;
+					}
+
+					p {
+						margin-bottom: 0;
+						margin-top: 7px;
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+
+	.contact-form {
+
+
+		.field-text,
+		.field-textarea {
+			border: 2px solid @color;
+			width: 100%;
+			margin-top: 20px;
+			color: @color;
+			.placeholder(@color);
+			.transition(all 0.3s ease);
+
+			&:focus {
+				border-color: @hover;
+			}
+		}
+
+		.field-textarea {
+			resize: none;
+			height:210px;
+		}
+
+		.awe-btn {
+			margin-top: 20px;
+			width: 200px;
+			padding-top: 12px;
+			padding-bottom: 12px;
+			font-size: 15px;
+		}
+	}
+}
+
+.contact-map {
+	height: 470px;
+	position: relative;
+	
+	#map {
+		height: 100%;
+		width: 100%;
+	}
+}

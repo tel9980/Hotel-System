@@ -1,0 +1,88 @@
+.section-404 {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.page-404 {
+	position: absolute;
+	max-width: 570px;
+	width: 100%;
+	padding: 15px;
+	left: 50%;
+	top: 50%;
+	.translate(-50%,-50%);
+
+	h1 {
+		color: #fff;
+		text-transform: uppercase;
+		font-size: 80px;
+		font-family: @Montserrat;
+		line-height: 1;
+	  	margin-top: 50px;
+
+		span {
+			color: @brand;
+		}
+	}
+
+	h6 {
+		color: #fff;
+		font-size: 27px;
+		margin-top: 10px;
+		font-family: @Hind;
+	}
+
+	p {
+		margin-bottom: 0;
+		font-size: 18px;
+		color: #fff;
+		margin-top: 25px;
+
+		&:last-child {
+			margin-top: 20px;
+		}
+
+		a {
+			color: #fff;
+			font-weight: 700;
+			.transition(all 0.2s ease);
+
+			&:hover {
+				color: @hover;
+			}
+		}
+	}
+
+	.search-404 {
+		margin-top: 35px;
+
+		.filed-text {
+			display: inline-block;
+			vertical-align: middle;
+			width: 370px;
+			border: 2px solid #fff;
+			color: #fff;
+			background-color: transparent;
+			.placeholder(#fff);
+			.transition(all 0.3s ease);
+
+			&:focus {
+				border-color: @brand;
+			}
+		}
+
+		.awe-btn {
+			vertical-align: middle;
+			font-size: 16px;
+			color: #fff;
+			margin-left: 10px;
+			height: 40px;
+			line-height: 36px;
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+	}
+}

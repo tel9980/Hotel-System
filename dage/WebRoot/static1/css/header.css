@@ -1,0 +1,60 @@
+/*=== Header V2 ===*/
+body header.header-v3 {
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff; }
+  body header.header-v3 .header_top {
+    text-align: center; }
+    body header.header-v3 .header_top .logo-top {
+      display: inline-block;
+      max-height: 66px;
+      width: auto;
+      margin: 18px 0; }
+    body header.header-v3 .header_top .header_left, body header.header-v3 .header_top .header_right {
+      line-height: 68px; }
+    body header.header-v3 .header_top a:hover, body header.header-v3 .header_top span:hover {
+      background-color: transparent !important;
+      color: #fff !important; }
+    body header.header-v3 .header_top .dropdown ul {
+      top: 50px; }
+      body header.header-v3 .header_top .dropdown ul li {
+        line-height: 20px; }
+        body header.header-v3 .header_top .dropdown ul li > a:hover {
+          background-color: #E1BD85 !important;
+          color: #fff !important; }
+    body header.header-v3 .header_top .socials a {
+      font-size: 12px;
+      line-height: 36px;
+      color: #fff;
+      display: inline-block;
+      padding: 0 7px; }
+      body header.header-v3 .header_top .socials a:hover, body header.header-v3 .header_top .socials a.active {
+        background-color: #fff;
+        color: #333; }
+  body header.header-v3 .header_content {
+    text-align: center; }
+    body header.header-v3 .header_content .header_logo {
+      display: none; }
+    body header.header-v3 .header_content .header_menu .menu > li a {
+      background-color: transparent;
+      color: #fff;
+      line-height: 64px;
+      position: relative; }
+    body header.header-v3 .header_content .header_menu .menu > li > a:hover:after {
+      content: "";
+      height: 1px;
+      position: absolute;
+      bottom: 0;
+      left: 20px;
+      right: 20px;
+      width: auto;
+      background-color: #E1BD85; }
+    body header.header-v3 .header_content .header_menu .menu .sub-menu {
+      background-color: #0E171E;
+      border: none; }
+      body header.header-v3 .header_content .header_menu .menu .sub-menu li a {
+        line-height: 20px; }
+        body header.header-v3 .header_content .header_menu .menu .sub-menu li a:hover {
+          color: #fff;
+          background-color: #E1BD85; }
+    body header.header-v3 .header_content:after {
+      background: rgba(0, 0, 0, 0.6); }

@@ -1,0 +1,229 @@
+.section-attractions {
+	padding-bottom: 100px;
+}
+
+#attraction-maps{
+	position: relative;
+	height:  470px;
+}
+
+.info-location-map {
+	text-align: center;
+
+	h2 {
+		font-size: 14px;
+		text-transform: uppercase;
+		color: #333;
+		font-weight: bold;
+		margin-bottom: 5px;
+	}
+
+	span {
+		font-size: 12px;
+		color: #898989;
+	}
+}
+
+.attraction {
+	padding-top: 60px;
+	margin-top: -60px;
+}
+
+.attraction_sidebar {
+	background-color: #f1f1f1;
+	margin-top: 60px;
+
+	.attraction_heading {
+		color: #333333;
+		font-size: 16px;
+		text-transform: uppercase;
+		font-weight: bold;
+		border-bottom: 1px solid #e4e4e4;
+		padding: 15px 20px;
+		text-align: center;
+		position: relative;
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+
+		.attraction-icon-drop {
+			display: none;
+			float: right;
+			position: absolute;
+			right: 20px;
+			font-size: 20px;
+			top: 50%;
+			.translate(0, -50%);
+		}
+	}
+
+	.attraction_sidebar-content {
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 30px;
+
+		.attraction_title {
+			background-color: @brand;
+			color: #fff;
+			font-family: @Montserrat;
+			font-size: 12px;
+			text-transform: uppercase;
+			font-weight: bold;
+			padding:10px 15px;
+			margin-top: 30px;
+
+			i {
+				margin-right: 15px;
+			}
+		}
+
+		.bootstrap-select.attraction_select.awe-select {
+			width: 100%;
+			margin-top: 30px;
+
+			.btn {
+				border-color: #f1f1f1;
+				background-color: #fff;
+
+				.filter-option, .caret {
+					color: #898989; 
+				}
+				
+			}
+		}
+
+		.attraction_location {
+			list-style: none;
+			padding-left: 0;
+			margin-top: 30px;
+			margin-bottom: 0;
+
+			li {
+				color: #898989;
+				font-weight: 500;
+				position: relative;
+				padding-left: 25px;
+				margin-top: 18px;
+
+				&:first-child {
+					margin-top: 0;
+				}
+
+				i {
+					color: #333333;
+					position: absolute;
+					left: 0;
+				}
+
+				a {
+					color: #898989;
+					.transition(all 0.3s ease);
+
+					&:hover {
+						color: @hover;
+					}
+				}
+
+				&.active a {
+					color: @hover;
+				}
+			}
+		}
+	}	
+}
+
+.attraction_detail {
+	margin-top: 60px;
+
+	.attraction_detail-title {
+		color: #333333;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-family: @Montserrat;
+		font-size: 20px;
+
+		i {
+			color: @hover;
+			margin-right: 20px;
+		}
+	}
+
+	ul {
+		color: #333;
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 1.4em;
+		list-style: none;
+		padding-left: 0;
+		margin-bottom: 0;
+		margin-top: 20px;
+
+		li {
+			margin-top: 10px;
+
+			span {
+				font-weight: bold;
+				text-transform: uppercase;
+				margin-right: 20px;
+			}
+
+			a {
+				color: @hover;
+			}
+		}
+	}
+}
+
+.attraction_content {
+	border-top: 1px solid #e4e4e4;	
+	padding-top: 30px;
+	color: #898989;
+	font-size: 14px;
+	margin-top: 35px;
+
+	.attraction_content-title {
+		text-transform: uppercase;
+		color: #333;
+		font-size: 20px;
+		font-family: @Montserrat;
+		font-weight: bold;
+	}
+
+	p {
+		margin-bottom: 0;
+		line-height: 1.4em;
+		font-size: 14px;
+
+		b{
+			color: #333;
+		}
+
+		a {
+			color: @brand;
+			text-decoration: underline;
+			font-weight: bold;
+			&:hover{
+				color: @hover;
+			}
+		}
+	}
+
+	.wp_caption {
+		max-width: 100%;
+
+		&.aligncenter {
+			text-align: center;
+		}
+
+		&.alignright {
+			float: right;
+			margin-left: 30px;
+		}
+
+		&.alignleft {
+			float: left;
+			margin-right: 30px;
+		}
+	}
+}

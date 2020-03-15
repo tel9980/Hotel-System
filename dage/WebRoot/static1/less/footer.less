@@ -1,0 +1,248 @@
+#footer {
+	background-color: #232323;	
+
+	.footer_top {
+		background: #2e2e2e url(../images/bg-footer-top.png)no-repeat;
+		padding: 20px 0;
+
+		.mailchimp {
+
+			h4 {
+				display: inline-block;
+				font-family: @Montserrat;
+				margin: 0;
+				color: #fff;
+				font-size: 25px;
+				vertical-align: middle;
+				text-transform: uppercase;
+				font-weight: normal;
+
+				&:before {
+					content: "\f003";
+					border: 3px solid @brand;
+					padding: 10px;
+					color: @brand;
+					margin-right: 20px;
+					font-size: 18px;
+					font-family: 'FontAwesome';
+					.border-radius(100%);
+				}
+			}
+
+			.mailchimp-form {
+				display: inline-block;
+				vertical-align: middle;
+				margin-left: 65px;
+
+				.input-text {
+					border: 2px solid #fff;
+					background-color: transparent;
+					color: #fff;
+					padding: 5px 10px;
+					display: inline-block;
+					vertical-align: middle;
+					line-height: 40px;
+					width: 290px;
+					.placeholder(#fff);
+				}
+
+				.awe-btn {
+					vertical-align: middle;
+					min-width: 135px;
+					text-align: center;
+					padding: 7px 10px;
+					height: 40px;
+					color: #fff;
+					background-color: @brand;
+					font-size: 16px;
+					text-transform: uppercase;
+					margin-left: 10px;
+					&:hover{
+						background: #fff;
+						color: @brand;
+					}
+				}
+			}
+		}
+
+		.social {
+			
+			.social-content {
+				font-size: 0;
+				
+				a {
+					font-size: 14px;
+					display: inline-block;
+					color: #fff;
+					border: 2px solid #fff;
+					line-height: 32px;
+					width: 32px;
+					height: 32px;
+					margin-top: 5px;
+					text-align: center;
+					margin-right: 20px;		
+					font-size: 16px;	
+					.border-radius(50%);
+					.transition(all 0.3s ease);
+
+					&:hover {
+						border-color: @brand;
+					}
+				}
+			}
+		}
+	}
+	
+	.footer_center {
+		padding-bottom: 40px;
+		p{
+			font-size: 14px;
+		}
+		.widget-logo {
+			overflow: hidden;
+			padding-top:20px;
+			.img {
+				max-width: 145px;
+				display: inline-block;
+				vertical-align: middle;
+				margin-right: 40px;
+
+				img {
+					max-width: 100%;
+				}
+			}
+
+			.text {
+				display: inline-block;
+				vertical-align: middle;
+				margin-top: 10px;
+
+				p {
+					color: #acacac;
+					margin-bottom: 10px;
+
+					i {
+						margin-right: 10px;
+						font-size: 16px;
+						color: #fff;
+					}
+
+					a {
+						color: #acacac;
+
+						&:hover {
+							color: @hover;
+							text-decoration: underline;
+						}
+					}
+
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+
+		.widget {
+			margin-top: 40px;
+			
+			.widget-title {
+				color: #fff;
+				text-transform: uppercase;
+				font-size: 16px;
+				margin-top: 0;
+				margin-bottom: 20px;
+			}
+
+			> ul {
+				margin-top: -5px;	
+			}
+
+			ul {
+				list-style: none;
+				padding-left: 0;
+				margin-bottom: 0;
+
+				li {
+					
+					a {
+						color: #acacac;
+						padding: 5px 0;
+						display: inline-block;
+						.transition(all 0.2s ease);
+
+						&:hover {
+							color: #fff;
+						}
+					}
+
+					.sub-menu {
+						margin-left: 15px;
+					}
+				}
+			}
+		}
+
+		.widget_tripadvisor {
+
+			.tripadvisor {
+
+				p {
+					color: #acacac;
+					font-size: 13.75px;
+					margin-bottom: 20px;
+				}
+
+				img {
+					max-width: 100%;
+					margin-bottom: 20px;
+				}
+
+				.tripadvisor-circle {
+					font-size: 0;
+					clear: bold;
+					display:block;
+
+					i {
+						font-size: 15px;
+						border: 2px solid #8bc23f;
+						padding: 1px;
+						background-color: #8bc23f;
+						background-clip: content-box;
+						display: inline-block;
+						width: 14px;
+						height: 14px;
+						margin-right: 5px;
+						position: relative;
+						.border-radius(50%);
+
+						&.part:before {
+							content:'';
+							position: absolute;
+							background-color: #1f232b;
+							display: block;
+							height: 8px;
+							width: 4px;
+							right: 1px;
+							top: 1px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.footer_bottom {
+		background-color: #101010;
+		padding: 10px 0;
+		text-align: center;
+		color: #acacac;
+		font-size: 12.22px;
+
+		p {
+			margin-bottom: 0;
+			font-size: 14px;
+		}
+	}
+}
+
